@@ -1,0 +1,146 @@
+@import
+	url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+	;
+
+/* The Modal (background) */
+.modal {
+	display: none;
+	/* Hidden by default */
+	position: fixed;
+	/* Stay in place */
+	z-index: 1;
+	/* Sit on top */
+	padding-top: 100px;
+	/* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%;
+	/* Full width */
+	height: 100%;
+	/* Full height */
+	overflow: auto;
+	/* Enable scroll if needed */
+	background-color: rgb(0, 0, 0);
+	/* Fallback color */
+	background-color: rgba(0, 0, 0, 0.8);
+	/* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+	background-color: white;
+	margin: auto;
+	padding: 30px;
+	border: 1px solid #888;
+	width: 25%;
+}
+
+.lgf {
+	font-family: 'Poppins', sans-serif;
+}
+
+.lgf h1 {
+	text-align: center;
+	font-size: 40px;
+	opacity: 100%;
+	color: black;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+.lgf input[type="password"], .lgf input[type="email"], .lgf select {
+	background: rgba(255, 255, 255, 0.1);
+	border: none;
+	font-size: 16px;
+	height: auto;
+	margin: 0;
+	outline: 0;
+	padding: 15px;
+	width: 70%;
+	background-color: #e8eeef;
+	color: #8a97a0;
+	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+}
+
+.lgf select {
+	padding: 6px;
+	height: 32px;
+	border-radius: 2px;
+}
+
+.lgin {
+	font-family: 'Poppins', sans-serif;
+	color: #FFF;
+	font-size: 20px;
+	border-radius: 5px;
+	border: 0px;
+	background-color: black;
+	cursor: pointer;
+	text-align: center;
+	font-weight: 500;
+	padding: 5px;
+	width: 200px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	border: 2px solid black;
+}
+
+.lgin:hover {
+	background-color: #98ffc5;
+	color: black;
+}
+
+.lgf .lgicon {
+	padding: 15px;
+	color: black;
+	min-width: 20px;
+	text-align: center;
+	background-color: #d4d4d4;
+	height: 18px;
+}
+
+.lgf p {
+	padding: 0;
+	margin: 0;
+	font-size: 15px;
+}
+
+.lgoogle-btn {
+	font-family: 'Poppins', sans-serif;
+	color: #FFFFFF;
+	font-size: 20px;
+	border-radius: 5px;
+	border: 0px;
+	background-color: #4286f4;
+	cursor: pointer;
+	text-align: center;
+	font-weight: 500;
+	padding: 5px;
+	padding-left: 1px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 200px;
+	border: 2px solid #4286f4;
+}
+
+.lgoogle-btn:hover {
+	background-color: #ffffff;
+	color: #4286f4;
+}
+
+.glgicon {
+	padding: 5px;
+	text-align: center;
+}
+
+.lgf a {
+	text-decoration: none;
+	color: black;
+}
+
+.wrapper {
+	text-align: center;
+}

@@ -1,0 +1,129 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background-color: white;
+	background-image: url(category.jpg);
+	background-repeat: repeat;
+	margin: 0;
+	padding: 0;
+}
+
+.boxed {
+	max-opacity: 90%;
+	background-color: #98ffc5;
+	margin: 0;
+	padding: 30px;
+}
+
+h2 {
+	font-size: 40px;
+	color: black;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+/* Float three columns side by side */
+.column1 {
+	float: left;
+	max-width: 30%;
+	margin: 0;
+	padding: 20px;
+	padding-top: 0;
+}
+
+.column {
+	float: left;
+	max-width: 30%;
+	margin: 0;
+	padding: 20px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+}
+
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.flip-box {
+	background-color: transparent;
+	max-width: 350px;
+	height: 450px;
+	perspective: 1000px;
+	margin: 0;
+	padding: 0;
+}
+
+/* Style the counter cards */
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	max-width: 350px;
+	height: 450px;
+	padding: 16px;
+	margin: 0;
+	text-align: center;
+	border: 2px solid black;
+	background-color: white;
+	border-radius: 20px;
+}
+
+.zoom {
+	padding: 50px;
+	transition: transform .5s;
+	margin: 0 auto;
+}
+
+.zoom:hover {
+	-ms-transform: scale(1.1);
+	/* IE 9 */
+	-webkit-transform: scale(1.1);
+	/* Safari 3-8 */
+	transform: scale(1.1);
+}
+
+p.rate {
+	color: black;
+	font-weight: bold;
+	font-size: 30px;
+	text-align: center;
+}
+
+.info-producto {
+	display: flex;
+	align-items: center;
+}
+
+.prize-producto {
+	margin-right: auto;
+	color: black;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.button-producto {
+	margin-left: auto;
+	color: white;
+	text-decoration: none;
+	background-color: #98ffc5;
+	color: black;
+	font-size: 25px;
+	padding: 5px 20px;
+	border-radius: 20px;
+}
+
+p.itemname {
+	font-size: 20px;
+}

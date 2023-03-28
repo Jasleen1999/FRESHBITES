@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="google-signin-client_id"
+	content="397544680867-qid0uguiingim882ddostd84s2tnq19j.apps.googleusercontent.com">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="icon" href="ilogo.png" type="image/x-icon">
+<link rel="stylesheet" href="up.css">
+<link rel="stylesheet" href="navbar.css">
+<link rel="stylesheet" href="footer.css">
+<link rel="stylesheet" href="modal.css">
+<script src="https://kit.fontawesome.com/8110fee9d3.js"
+	crossorigin="anonymous"></script>
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link
+	href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+	rel="stylesheet">
+</head>
+<!--<script src="gologin.js"></script>-->
+<script>
+var googleUser = {};
+var startApp = function() {
+  gapi.load('auth2', function(){
+    // Retrieve the singleton for the GoogleAuth library and set up the client.
+    auth2 = gapi.auth2.init({
+      client_id: '397544680867-qid0uguiingim882ddostd84s2tnq19j.apps.googleusercontent.com',
+      cookiepolicy: 'single_host_origin',
+      // Request scopes in addition to 'profile' and 'email'
+      //scope: 'additional_scope'
+    });
+    attachSignin(document.getElementById('google-btn'));
+  });
+};
+
+function attachSignin(element) {
+  console.log(element.id);
+  auth2.attachClickHandler(element, {},
+      function(googleUser) {
+        var profile = googleUser.getBasicProfile();
+        var id_token = googleUser.getAuthResponse().id_token;
+        console.log('ID: ' + profile.getId());
+        console.log('Name: ' + profile.getName());
+        console.log('Email: ' + profile.getEmail());
+        var c = prompt("Enter your mobile number : ", "");
+        var m = profile.getEmail();
+        var n = profile.getName();
+        var i = profile.getId();
+        window.location.replace("gosignup.jsp?mess="+m+','+n+","+c+","+i);
+      });
+}
+</script>
+
+<title>SIGN UP</title>
+
+<body>
+	<script src="login_modal.js"></script>
+	<script language="javascript" type="text/javascript" src="navbar.js"></script>
+	<script src="modal.js"></script>
+	<div class="suf">
+		<form action="signup.jsp" method="post">
+			<h1 style="color: black;">SIGN UP</h1>
+			<label for="name">Name:</label> <i class="fas fa-user sicon"></i><input
+				type="text" id="name" name="fullname"> <label for="mail">Email:</label>
+			<i class="fas fa-envelope sicon"></i><input type="email" id="mail"
+				name="email"> <label for="password">Password:</label> <i
+				class="fas fa-lock sicon"></i><input type="password" id="password"
+				name="pwd"> <label for="phone">Phone No:</label> <i
+				class="fas fa-phone-alt sicon"></i><input type="tel" id="phone"
+				name="no">
+			<button type="submit" class="su">Sign Up</button>
+			<p style="text-align: center; font-weight: 500;">OR</p>
+
+			<!--<button id="google-btn">
+        <span><i class="fab fa-google gicon"></i></span>
+        <span>Sign up with Google</span>
+      </button>-->
+			<div id="google-btn" class="google-btn">
+				<span><i class="fab fa-google gicon"></i></span> <span>Sign
+					Up with Google</span>
+			</div>
+			<script>
+				startApp();
+			</script>
+		</form>
+	</div>
+	<script language="javascript" type="text/javascript" src="footer.js"></script>
+</body>
+
+</html>

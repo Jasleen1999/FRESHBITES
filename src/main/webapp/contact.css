@@ -1,0 +1,115 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	background-image: url(contact.png);
+	background-repeat: repeat;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+.boxed {
+	opacity: 70%;
+	padding: 5px;
+	padding-bottom: 120px;
+	margin-bottom: 10px;
+	background-color: black;
+}
+
+h1 {
+	text-align: center;
+	font-size: 40px;
+}
+
+h2 {
+	text-align: center;
+	font-size: 25px;
+	padding: 0;
+	margin: 20px 0px 0px;
+}
+
+h3 {
+	text-align: center;
+	font-size: 20px;
+	font-weight: 500;
+	padding: 0;
+	margin: 20px 0px 0px;
+}
+
+h4 {
+	text-align: center;
+	font-size: 18px;
+}
+
+p {
+	font-weight: 500;
+	font-size: 16px;
+	padding: 0;
+	margin: 0px 50px 0px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.row a:hover {
+	color: #20b2aa;
+}
+
+.icon {
+	margin: 5px;
+	padding: 5px;
+	font-size: 500%;
+}
+
+* {
+	box-sizing: inherit;
+}
+
+.row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.column {
+	display: inline-block;
+	margin-top: -120px;
+	float: left;
+	margin-bottom: 40px;
+	padding: 0 8px;
+}
+
+.flip-box {
+	background-color: transparent;
+	width: 350px;
+	height: 350px;
+	perspective: 1000px;
+}
+
+.card {
+	position: relative;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	background-color: white;
+	width: 350px;
+	height: 350px;
+	text-align: center;
+}
+
+.card:hover {
+	-ms-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+	z-index: 99;
+}
+
+.center {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}

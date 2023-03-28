@@ -1,0 +1,162 @@
+*, *:before, *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	background-color: gray;
+}
+
+.suf {
+	align-items: center;
+}
+
+.suf h1 {
+	text-align: center;
+	font-size: 40px;
+	opacity: 100%;
+	color: white;
+	padding: 0;
+	margin: 0;
+}
+
+.suf form {
+	max-width: 600px;
+	margin: 20px auto;
+	padding: 30px;
+	background: #f4f7f8;
+	border-radius: 8px;
+	align-items: center;
+}
+
+.suf input[type="text"], .suf input[type="password"], .suf input[type="email"],
+	.suf input[type="tel"], .suf select {
+	background: rgba(255, 255, 255, 0.1);
+	border: none;
+	font-size: 16px;
+	height: auto;
+	margin: 0;
+	outline: 0;
+	padding: 15px;
+	width: 90%;
+	background-color: #e8eeef;
+	color: #8a97a0;
+	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+	margin-bottom: 30px;
+}
+
+.suf select {
+	padding: 6px;
+	height: 32px;
+	border-radius: 2px;
+}
+
+.su {
+	font-family: 'Poppins', sans-serif;
+	color: #FFF;
+	font-size: 20px;
+	border-radius: 5px;
+	border: 0px;
+	background-color: black;
+	cursor: pointer;
+	text-align: center;
+	font-weight: 500;
+	padding: 15px;
+	width: 100%;
+	margin: 0;
+	border: 2px solid black;
+}
+
+.su:hover {
+	background-color: #98ffc5;
+	color: black;
+}
+
+.suf label {
+	display: block;
+	margin-bottom: 8px;
+}
+
+.suf label.light {
+	font-weight: 300;
+	display: inline;
+}
+
+.google-btn {
+	font-family: 'Poppins', sans-serif;
+	color: #FFFFFF;
+	font-size: 20px;
+	border-radius: 5px;
+	border: 0px;
+	background-color: #4286f4;
+	cursor: pointer;
+	text-align: center;
+	font-weight: 500;
+	padding: 5px;
+	padding-left: 1px;
+	margin: 0;
+	width: 100%;
+	border: 2px solid #4286f4;
+	height:;
+}
+
+/*#customBtng {
+  	  position:relative;
+  	  height:100% ;
+      width: 100%;
+      display: flex;
+      color: #444;
+      margin-left: auto;
+      margin-right:auto;
+      border-radius: 5px;
+      border: thin solid #888;
+      box-shadow: 1px grey;
+      background: white;
+      /*white-space: nowrap;*/
+}
+* /
+	/*#customBtng:hover {
+      cursor: pointer;
+      background-color:#000;
+}*/
+	/*span.buttonTextg {   
+      font-family: 'Poppins', sans-serif;
+  color: #FFFFFF;
+  font-size: 20px;
+  border-radius: 5px;
+  border: 0px;
+  background-color: #4286f4;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 500;
+  padding: 5px;
+  padding-left: 1px;
+  margin: 0;
+  width: 100%;
+  border: 2px solid #4286f4;
+  height: ;
+}*/ 
+
+.google-btn:hover {
+	background-color: #ffffff;
+	color: #4286f4;
+}
+
+.gicon {
+	padding: 15px;
+	min-width: 30px;
+	text-align: center;
+}
+
+.sicon {
+	padding: 15px;
+	color: black;
+	min-width: 30px;
+	text-align: center;
+	background-color: white;
+	height: 48px;
+}

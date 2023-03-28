@@ -1,0 +1,209 @@
+body {
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	padding: 0px;
+	background-image: url(spikes.png);
+	background-repeat: repeat;
+}
+
+html {
+	margin: 0;
+	padding: 0;
+}
+
+/* Slideshow container */
+.slideshow-container {
+	width: 100%;
+	position: relative;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	color: black;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+	background-color: white;
+}
+
+/* Caption text */
+.text {
+	color: #f2f2f2;
+	font-size: 15px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: white;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+	background-color: #98ffc5;
+}
+
+/* Fading animation */
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 0.2s;
+	animation-name: fade;
+	animation-duration: 0.2s;
+}
+
+.row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+}
+
+.column {
+	width: 20%;
+	text-align: center;
+	display: inline-block;
+	float: left;
+	margin-top: 0;
+	margin-bottom: 16px;
+	padding-top: 0;
+	padding-right: 25px;
+	padding-left: 25px;
+}
+
+.div1 {
+	background-color: #fff;
+	padding: 15px;
+	border-radius: 9px;
+	border: 1.5px solid black;
+	transition: 0.5s;
+}
+
+.div1:hover {
+	transform: scale(1.05);
+	transition: 0.3s;
+	border: 3.5px solid skyblue;
+}
+
+.div2 {
+	background-color: #fff;
+	padding: 15px;
+	border-radius: 9px;
+	border: 1.5px solid black;
+	transition: 0.5s;
+}
+
+.div2:hover {
+	transform: scale(1.05);
+	transition: 0.3s;
+	border: 3.5px solid lightcoral;
+}
+
+.div3 {
+	background-color: #fff;
+	padding: 15px;
+	border-radius: 9px;
+	border: 1.5px solid black;
+	transition: 0.5s;
+}
+
+.div3:hover {
+	transform: scale(1.05);
+	transition: 0.3s;
+	border: 2.5px solid #00b050;
+}
+
+.div4 {
+	background-color: white;
+	padding: 15px;
+	border-radius: 9px;
+	border: 1.5px solid black;
+	transition: 0.5s;
+}
+
+.div4:hover {
+	transform: scale(1.05);
+	transition: 0.3s;
+	border: 3.5px solid slategrey;
+}
+
+.btn {
+	padding: 5px 15px 5px 15px;
+	border-radius: 20px 4px 20px 4px;
+	border: none;
+	color: white;
+}
+
+.btn1 {
+	background-color: skyblue;
+}
+
+.btn2 {
+	background-color: lightcoral;
+}
+
+.btn3 {
+	background-color: #00b050;
+}
+
+.btn4 {
+	background-color: slategrey;
+}
+
+p {
+	font-size: 18px;
+	text-align: center;
+	font-weight: 500;
+}
+
+p a {
+	text-decoration: none;
+	color: black;
+}
+
+h3 {
+	font-size: 50px;
+	text-align: center;
+	color: #20b2aa;
+	margin: 50px;
+	margin-bottom: 20px;
+	margin-top: 60px;
+}
+
+.para {
+	font-size: 18px;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	padding-left: 100px;
+	padding-right: 100px;
+	font-weight: 500;
+}

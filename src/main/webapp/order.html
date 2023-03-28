@@ -1,0 +1,190 @@
+<html>
+<head>
+<meta name="google-signin-client_id" content="397544680867-qid0uguiingim882ddostd84s2tnq19j.apps.googleusercontent.com">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="icon" href="ilogo.png" type="image/x-icon">
+<link rel="stylesheet" href="order.css">
+<link rel="stylesheet" href="navbar.css">
+<link rel="stylesheet" href="footer.css">
+<link rel="stylesheet" href="modal.css">
+<script src="https://kit.fontawesome.com/8110fee9d3.js"
+	crossorigin="anonymous"></script>
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link
+	href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+	rel="stylesheet">
+</head>
+<script src="gologin.js"></script>
+<title>ORDER NOW</title>
+</head>
+
+<body>
+	<script src="login_modal.js"></script>
+	<script language="javascript" type="text/javascript" src="navbarorder.js"></script>
+	<script src="modal.js"></script>
+	<script src="order.js"></script>
+	<div class="boxed">
+		<h1 style="margin-bottom: 0;">ORDER NOW!</h1>
+		<h3 style="margin-top: 0; margin-bottom: 30px;">All your daily
+			essentials, delivered at your doorstep.</h3>
+	</div>
+	<center>
+	<div><b>CATEGORIES:</b>
+	<br>
+		<button class="buttonO">ATTA & DAL</button>
+		<button class="buttonO">BABY & PET CARE</button>
+		<button class="buttonO">BATH & BODY</button>
+		<button class="buttonO">BEVERAGES</button>
+		<br>
+		<button class="buttonO">DAIRY PRODUCTS</button>
+		<button class="buttonO">FOOD AND SNACKS</button>
+		<button class="buttonO">FRUITS AND VEGETABLES</button>
+		<button class="buttonO">HOUSEHOLDS</button>
+	 </div>
+	 </center>
+	<form action="orders.jsp" method="post">
+		<div class="row input-container">
+			<div class="col-xs-12">
+				<div class="styled-input wide">
+					<input type="text" name="email" required /> <label>E-Mail*</label>
+				</div>
+			</div>
+			<div class="col-xs-12">
+				<div class="styled-input wide">
+					<input type="text" name="fullname" required /> <label>Full
+						Name*</label>
+				</div>
+			</div>
+			<div class="col-xs-12">
+				<div class="styled-input wide">
+					<input type="text" name="no" required /> <label>Contact
+						No.*</label>
+				</div>
+			</div>
+			<div class="col-xs-12">
+				<div class="styled-input wide">
+					<textarea name="address" required></textarea>
+					<label>Address*</label>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<div class="styled-input wide">
+					<input type="date" name="ddate" required /> <label>Delivery
+						Date*</label>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<div class="styled-input wide">
+					<DATALIST id="deliv_time">
+						<option value=" 9:00 AM - 12:00 PM"></option>
+						<option value=" 12:00 PM - 3:00 PM"></option>
+						<option value=" 3:00 PM - 6:00 PM"></option>
+						<option value=" 6:00 PM - 9:00 PM"></option>
+					</DATALIST>
+					<input list="deliv_time" name="dtime" required /> <label>Delivery
+						Time*</label>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<div class="styled-input wide">
+					<input type="text" name="i1" required /> <label>Item 1*</label>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<div class="styled-input">
+					<input id=demoInput style="width: 100%; height: 11%;" type=number
+						min=0 placeholder="Quantity*" name="q1"> <a
+						href='javascript:increment1()'
+						style="border: none; padding: 3px; position: relative; bottom: 55px; left: 200px; outline: none;"><img
+						src="order/inc.png" style="width: 30px; height: 30px;"></a> <a
+						href='javascript:decrement1()'
+						style="border: none; padding: 3px; position: relative; bottom: 55px; left: 200px; outline: none;"><img
+						src="order/dec.png" style="width: 30px; height: 30px;"></a>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<div class="styled-input wide">
+					<input type="text" name="i2" placeholder="Item 2" />
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<div class="styled-input ">
+					<input id=demoInput1 style="width: 100%; height: 11%;" type=number
+						min=0 placeholder="Quantity" name="q2"> <a
+						href='javascript:increment2()'
+						style="border: none; padding: 3px; position: relative; bottom: 55px; left: 200px; outline: none;"><img
+						src="order/inc.png" style="width: 30px; height: 30px;"></a> <a
+						href='javascript:decrement2()'
+						style="border: none; padding: 3px; position: relative; bottom: 55px; left: 200px; outline: none;"><img
+						src="order/dec.png" style="width: 30px; height: 30px;"></a>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<div class="styled-input wide">
+					<input type="text" name="i3" placeholder="Item 3" />
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<div class="styled-input ">
+					<input id=demoInput2 style="width: 100%;" type=number min=0
+						placeholder="Quantity" name="q3"> <a
+						href='javascript:increment3()'
+						style="border: none; padding: 3px; position: relative; bottom: 55px; left: 200px; outline: none;"><img
+						src="order/inc.png" style="width: 30px; height: 30px;"></a> <a
+						href='javascript:decrement3()'
+						style="border: none; padding: 3px; position: relative; bottom: 55px; left: 200px; outline: none;"><img
+						src="order/dec.png" style="width: 30px; height: 30px;"></a>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<div class="styled-input wide">
+					<input type="text" name="i4" placeholder="Item 4" />
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<div class="styled-input ">
+					<input id=demoInput3 style="width: 100%;" type=number min=0
+						placeholder="Quantity" name="q4"> <a
+						href='javascript:increment4()'
+						style="border: none; padding: 3px; position: relative; bottom: 55px; left: 200px; outline: none;"><img
+						src="order/inc.png" style="width: 30px; height: 30px;"></a> <a
+						href='javascript:decrement4()'
+						style="border: none; padding: 3px; position: relative; bottom: 55px; left: 200px; outline: none;"><img
+						src="order/dec.png" style="width: 30px; height: 30px;"></a>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<div class="styled-input wide">
+					<input type="text" name="i5" placeholder="Item 5" />
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<div class="styled-input ">
+					<input id=demoInput4 style="width: 100%;" type=number min=0
+						placeholder="Quantity" name="q5"> <a
+						href='javascript:increment5()'
+						style="border: none; padding: 3px; position: relative; bottom: 55px; left: 200px; outline: none;"><img
+						src="order/inc.png" style="width: 30px; height: 30px;"></a> <a
+						href='javascript:decrement5()'
+						style="border: none; padding: 3px; position: relative; bottom: 55px; left: 200px; outline: none;"><img
+						src="order/dec.png" style="width: 30px; height: 30px;"></a>
+				</div>
+			</div>
+			<div class="col-xs-12">
+				<button class="btn-lrg submit-btn" style="cursor: pointer;"
+					onclick="msg()">PLACE YOUR ORDER</button>
+			</div>
+		</div>
+	</form>
+	<script language="javascript" type="text/javascript" src="footer.js"></script>
+	<script>
+		function msg() {
+			alert("Thank you for ordering!")
+		}
+	</script>
+</body>
+
+</html>
